@@ -24,7 +24,7 @@ export class ContactUsPage{
         return cy.get('[data-qa="submit-button"]')
     }
     getSuccessNotification(){
-        return cy.get('.alert-success').eq(0)
+        return cy.get('.status.alert.alert-success')
     }
 
     //
