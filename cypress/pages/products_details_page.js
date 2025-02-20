@@ -3,7 +3,7 @@ export class ProductsDetails {
         return cy.get('.product-information h2')
     }
     getProductCategory(){
-        return cy.get('.product-information p')
+        return cy.get('.product-information p').contains('Category')
     }
     getProductPrice(){
         return cy.get('.product-information span span')
