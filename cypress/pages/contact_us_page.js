@@ -1,38 +1,38 @@
 export class ContactUsPage{
-    getContactUsForm(){
+    get contactUsForm(){
         return cy.get('#contact-us-form')
     }
-    getGetInTouchTitle(){
+    get getInTouchTitle(){
         return cy.get('.title.text-center').contains('Get In Touch')
     }
-    getNameField(){
+    get nameField(){
         return cy.get('[data-qa="name"]')
     }
-    getEmailField(){
+    get emailField(){
         return cy.get('[data-qa="email"]')
     }
-    getSubjectField(){
+    get subjectField(){
         return cy.get('[data-qa="subject"]')
     }
-    getMessageField(){
+    get messageField(){
         return cy.get('[data-qa="message"]')
     }
-    getUploadButton(){
+    get uploadButton(){
         return cy.get('[name="upload_file"]')
     }
-    getSubmitButton(){
+    get submitButton(){
         return cy.get('[data-qa="submit-button"]')
     }
-    getSuccessNotification(){
+    get successNotification(){
         return cy.get('.status.alert.alert-success')
     }
 
     //
     contactUsForm(name, email, subject, message){
-        this.getNameField().clear().type(name)
-        this.getEmailField().clear().type(email)
-        this.getSubjectField().clear().type(subject)
-        this.getMessageField().clear().type(message)
-        this.getSubmitButton().click()
+        this.nameField.clear().type(name)
+        this.emailField.clear().type(email)
+        this.subjectField.clear().type(subject)
+        this.messageField.clear().type(message)
+        this.submitButton.click()
     }
 }

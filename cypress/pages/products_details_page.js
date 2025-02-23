@@ -1,14 +1,14 @@
 export class ProductsDetails {
-    getProductName (){
+    get productName (){
         return cy.get('.product-information h2')
     }
-    getProductCategory(){
+    get productCategory(){
         return cy.get('.product-information p').contains('Category')
     }
-    getProductPrice(){
+    get productPrice(){
         return cy.get('.product-information span span')
     }
-    getProductAvailability(){
+    get productAvailability(){
         return cy.get('.product-information p b').contains('Availability')
     }
 }

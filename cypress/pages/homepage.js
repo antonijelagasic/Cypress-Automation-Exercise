@@ -1,44 +1,44 @@
 export class Homepage {
-    getPageTitle(){
+    get pageTitle(){
         return cy.get('h1')
     }
-    getNavigation(){
+    get navigation(){
         return cy.get('.navbar-nav')
     }
-    getCarousel(){
+    get carousel(){
         return cy.get('#slider-carousel .carousel-inner')
     }
-    getLogo(){
+    get logo(){
         return cy.get('.logo.pull-left')
     }
-    getFeatureItemsSection(){
+    get featureItemsSection(){
         return cy.get('.features_items')
     }
-    getSubscribeEmailField(){
+    get subscribeEmailField(){
         return cy.get('#susbscribe_email')
     }
-    getSubscribeButton(){
+    get subscribeButton(){
         return cy.get('#subscribe')
     }
-    getSubrscibeSuccessAlert(){
+    get subrscibeSuccessAlert(){
         return cy.get('.alert-success.alert')
     }
-    getProductsOption(){
+    get productsOption(){
         return cy.get('[href="/products"]')
     }
-    getCartOption(){
+    get cartOption(){
         return cy.get('[href="/view_cart"] .fa-shopping-cart')
     }
-    getSignUpLoginOption(){
+    get signUpLoginOption(){
         return cy.get('[href="/login"]')
     }
-    getTestCasesOption(){
+    get testCasesOption(){
         return cy.get('[href="/test_cases"] .fa-list')
     }
-    getApiTestingOption(){
+    get apiTestingOption(){
         return cy.get('[href="/api_list"] .fa-list')
     }
-    getContacUsOption(){
+    get contacUsOption(){
         return cy.get('[href="/contact_us"]')
     }
 }

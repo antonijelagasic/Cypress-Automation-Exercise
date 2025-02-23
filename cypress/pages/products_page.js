@@ -1,20 +1,20 @@
 export class Products {
-    getProductSection(){
+    get productSection(){
         return cy.get('.features_items')
     }
-    getViewProductButton(){
+    get viewProductButton(){
         return cy.get('.choose')
     }
-    getSearchField(){
+    get searchField(){
         return cy.get('#search_product')
     }
-    getSubmitSearch(){
+    get submitSearch(){
         return cy.get('#submit_search')
     }
-    getSearchedProductsTitle(){
+    get searchedProductsTitle(){
         return cy.get('h2.title.text-center')
     }
-    getProductsTitle(){
+    get productsTitle(){
         return cy.get('.productinfo p')
     }
 }
